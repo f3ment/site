@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+  
+  <script src="https://use.fontawesome.com/351be3174f.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="lg2.png" alt="logo">
+  </div>
+    <ul class="menu">
+      <li><a href="">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="cta">
+      <a href="" class="button">Contatti</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</div>
+
+<div class="hero">
+  <div class="hero__content">
+    <p class="intro-text">Hi, my name is</p>
+    <h1 class="big-text">Francesco Trementozzi</h1>
+    <h2 class="sbig-text tw">And I'm a <span class="typing tr"></span> </h2>
+    <a href="" class="button">Discover More</a>
+  </div>
+</div>
+
+<!--Ancora About-->
+<a name="about"></a>
+  <div class="poster mt-3", >
+    <div class="poster__img">
+        <img src="me.jpg" alt="">
+    </div>
+    <div class="poster__content">
+      <h3 class="big-text tw">About me</h3>
+      <p class="tw">Born on November 8, 2001, I have always been passionate about <span class="typing2 tr"></span><br> I study computer engineering at the Polytechnic of Milan.</p>
+      <a href="" class="button">Call to action</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Footer-------------------------->
+  <footer class="footer">
+    <div class="main-content">
+      <div class="box left">
+        <div class="content">
+          <h2>Social</h2>
+  <!--        <img src="lg2.png" alt="logo">   -------------------->
+          <div class="socials">
+            <a href="https://facebook.com/francesco.trementozzi/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ftrement/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://t.me/f3ment" target="_blank"><i class="fa fa-telegram"></i></a>
+            <a href="https://github.com/f3ment" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="box center">
+        <h2>Where I am</h2>
+        <div class="place">
+          <i class="fas fa-map-marker"></i>
+          <p class="text tw">Italy</p>
+        </div>
+        <div class="mail tw">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:f3ment@protonmail.com">f3ment@protonmail.com</a></div>
+      </div>
+      <div class="box right">
+        <h2>Contact Me</h2>
+        <div class="content">
+          <form action="#">
+            <div class="email">
+              <div class="text tw">Email *</div>
+              <input type="email" required>
+            </div>
+            <div class="msg">
+              <div class="text tw">Message</div>
+              <textarea cols="25" rows="10" required></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+  $( document ).ready(function() {
+
+    /* Open Panel */
+    $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+    });
+
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
