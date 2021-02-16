@@ -178,7 +178,7 @@ p{line-height: 28px; color:#666; font-weight: 300;}
 
 
 
-/* Contact-section */
+/* Contact-section 
 
 
 
@@ -193,7 +193,7 @@ p{line-height: 28px; color:#666; font-weight: 300;}
 
 
 .contact-section{
-/*  background: url(contact-bg.jpg) no-repeat center;*/
+/*  background: url(contact-bg.jpg) no-repeat center;
   background-color: #000;
   background-size: cover;
   padding: 40px 0;
@@ -257,6 +257,18 @@ textarea.contact-form-text{
   background: #2980b9;
   
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -425,3 +437,4 @@ ul.social-network li {
     text-align: center;
   }
 }
+
