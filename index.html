@@ -19,21 +19,28 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Footer link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- Scroll animation reveal --------------->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  
+        <!--Ancora home-->
+        <a name="home"></a>
+  
+  
 
 </head>
 <body>
+  
 
 <div class="header">
   <div class="logo">
     <img src="lg2.png" alt="logo">
   </div>
     <ul class="menu">
-      <li><a href="">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#contact-anc">Contact</a></li>
     </ul>
     <div class="cta">
       <a href="" class="button">Contatti</a>
@@ -46,21 +53,26 @@
 </div>
 
 <div class="hero">
-  <div class="hero__content">
+  <div class="hero__content reveal">
     <p class="intro-text">Hi, my name is</p>
     <h1 class="big-text">Francesco Trementozzi</h1>
     <h2 class="sbig-text tw">And I'm a <span class="typing tr"></span> </h2>
-    <a href="" class="button">Discover More</a>
+    <a href="#about" class="button">Discover More</a>
   </div>
+  <video autoplay muted loop id="video-back">
+    <source src="video.mp4" type="video/mp4">
+  </video>
 </div>
 
-<!--Ancora About-->
+
+<!--Ancora about-->
 <a name="about"></a>
-  <div class="poster mt-3", >
-    <div class="poster__img">
+<!-- Poster -->
+<div class="poster mt-3", >
+    <div class="poster__img reveal">
         <img src="me.jpg" alt="">
     </div>
-    <div class="poster__content">
+    <div class="poster__content reveal">
       <h3 class="big-text tw">About me</h3>
       <p class="tw">Born on November 8, 2001, I have always been passionate about <span class="typing2 tr"></span><br> I study computer engineering at the Polytechnic of Milan.</p>
       <a href="" class="button">Call to action</a>
@@ -71,42 +83,36 @@
 
 
 
+<!-- Contact Anchor----------------->
+<a name="contact-anc"></a>
 
-
-
-
-
-
-
-<!-- Footer---------------------------------->
-<div class="footer-basic">
-  <footer>
-      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-      <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Home</a></li>
-          <li class="list-inline-item"><a href="#">Services</a></li>
-          <li class="list-inline-item"><a href="#">About</a></li>
-          <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-      </ul>
-      <p class="copyright">Company Name © 2018</p>
-  </footer>
+<!-- Contact Section ---------------------->
+<div class="contact-section">
+  <h1 class="sbig-text">Contact me</h1>
+  <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your name">
+      <input type="email" class="contact-form-text" placeholder="Your email">
+      <input type="text" class="contact-form-text" placeholder="Your phone">
+      <textarea class="contact-form-text" placeholder="Your message"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send">
+    </form>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  
 
 
-
-
-
-
-
-
-
-
-
-
+<!-- Footer ----------------------->
+<div class="footer">
+  <ul class="social-network social-circle">
+<!--<li><a href="" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>-->
+<!--<li><a href="" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+    <li><a href="https://facebook.com/francesco.trementozzi" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://instagram.com/ftrement" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://t.me/f3ment" target="_blank" class="icoTelegram" title="Telegram"><i class="fa fa-telegram"></i></a></li>
+    <li><a href="https://github.com/f3ment" target="_blank" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+    <li><a href="mailto:f3ment@protonmail.com" class="icoEnvelope" title="Email"><i class="fa fa-envelope"></i></a></li>
+  </ul>
+</div>
 
 
 
@@ -122,9 +128,14 @@
     /* Open Panel */
     $( ".hamburger" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
-    });
-
+    });   
+    
   });
+
+
+  ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 1000});
+  
+  
 </script>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -134,5 +145,3 @@
 
 </body>
 </html>
-
-
