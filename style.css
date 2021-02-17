@@ -285,10 +285,12 @@ textarea.contact-form-text{
 
 /* footer social icons */
 .footer {
+  max-height: 20px;
   background-color: #000;
   padding: 20px 0;
   text-align: center;
 }
+
 
 ul.social-network {
   list-style: none;
