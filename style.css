@@ -279,6 +279,9 @@ p{line-height: 28px; color:#666; font-weight: 300;}
 .bar .progress-line.php span{
   width: 15%;
 }
+.bar .progress-line.js span{
+  width: 30%;
+}
 .progress-line span::before{
   position: absolute;
   content: "";
@@ -325,6 +328,9 @@ p{line-height: 28px; color:#666; font-weight: 300;}
 }
 .progress-line.php span::after{
   content: "15%";
+}
+.progress-line.js span::after{
+  content: "30%";
 }
 
 
