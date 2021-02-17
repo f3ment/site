@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Francesco Trementozzi</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
 
@@ -34,16 +34,16 @@
   
 
 <div class="header">
-  <div class="logo">
+  <div class="logo zoom-1">
     <img src="lg2.png" alt="logo">
   </div>
     <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact-anc">Contact</a></li> 
+      <li><a href="#home" class="zoom-2">Home</a></li>
+      <li><a href="#about" class="zoom-3">About</a></li>
+<!--  <li><a href="#contact-anc">Contact</a></li>  -->
     </ul>
     <div class="cta">
-      <a href="" class="button">Contatti</a>
+      <a href="#contatti" class="button ">Contatti</a>
     </div>
     <div class="hamburger">
       <span></span>
@@ -81,24 +81,25 @@
 
 
 
-     <!--Contact Anchor----------------->
+     <!--Contact Anchor-----------------
 <a name="contact-anc"></a>
 
-  <!--- Contact Section ---------------------->
+  !--- Contact Section ----------------------
 <div class="contact-section mt-3">
-  <h1 class="big-text">Contact me</h1>
-  <div class="border"></div>
+  <h1 class="big-text reveal0">Contact me</h1>
+  <div class="border reveal00"></div>
     <form class="contact-form" action="mail.php" method="POST">
-      <input type="text" name="name"class="contact-form-text" placeholder="Your name">
-      <input type="email" name="email" class="contact-form-text" placeholder="Your email">
-      <textarea class="contact-form-text" name="message" placeholder="Your message"></textarea>
-      <input type="submit" class="contact-form-btn" value="Send">
+      <input type="text" name="name"class="contact-form-text reveal00" placeholder="Your name">
+      <input type="email" name="email" class="contact-form-text reveal00" placeholder="Your email">
+      <textarea class="contact-form-text reveal00" name="message" placeholder="Your message"></textarea>
+      <input type="submit" class="contact-form-btn zoom-4" value="Send">
     </form>
 </div>
-
+-->
 
 
 <!-- Footer ----------------------->
+<a name="contatti"></a>
 <div class="footer reveal0">
   <ul class="social-network social-circle">
 <!--<li><a href="" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>-->
@@ -107,8 +108,10 @@
     <li><a href="https://instagram.com/ftrement" target="_blank" class="icoInstagram zoom-1" title="Instagram zoom"><i class="fa fa-instagram"></i></a></li>
     <li><a href="https://t.me/f3ment" target="_blank" class="icoTelegram zoom-2" title="Telegram"><i class="fa fa-telegram"></i></a></li>
     <li><a href="https://github.com/f3ment" target="_blank" class="icoGithub zoom-3" title="Github"><i class="fa fa-github"></i></a></li>
-    <li><a href="mailto:f3ment@protonmail.com" class="icoEnvelope zoom-4" title="Email"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="mailto:f3ment@protonmail.com" class="icoEnvelope zoom-00" title="Email"><i class="fa fa-envelope"></i></a></li>
   </ul>
+  <br><br>
+  <p class="copyright zoom-5">Copyright © Francesco Trementozzi</p>
 </div>
 
 
@@ -128,18 +131,24 @@
     });   
     
   });
-
-
+  
+  
+  ScrollReveal().reveal('.reveal00', { distance: '50px', duration: 500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500});
 
   ScrollReveal().reveal('.reveal0', { distance: '50px', duration: 500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 1000});
 
+  ScrollReveal().reveal('.reveal-up', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 1000});
+
   ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 1000});
 
+  ScrollReveal().reveal('.zoom-00', { scale: 0.9, delay: 1000});
+  
   ScrollReveal().reveal('.zoom-0', { scale: 0.85, delay: 100});
   ScrollReveal().reveal('.zoom-1', { scale: 0.85, delay: 200});
   ScrollReveal().reveal('.zoom-2', { scale: 0.85, delay: 400});
   ScrollReveal().reveal('.zoom-3', { scale: 0.85, delay: 700});
   ScrollReveal().reveal('.zoom-4', { scale: 0.85, delay: 1000});
+  ScrollReveal().reveal('.zoom-5', { scale: 0.85, delay: 1500});
 
 
 
@@ -153,3 +162,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
